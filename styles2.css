@@ -1,0 +1,254 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+    background: linear-gradient(135deg, #fdffff, #fdfefd); /* Pink gradient background */
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Adjusted font size */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+    background: url('Images/Background.png') no-repeat center center/cover;
+    color: white;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem; /* Larger font size for hero section */
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem; /* Larger font size for hero paragraph */
+}
+
+/* Hero About Section */
+.hero-about {
+    background: url('Images/divo.jpeg') no-repeat center center/cover;
+    color: white;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2.5rem; /* Larger font size for section headings */
+}
+
+/* General Section Styling */
+section {
+    padding: 2rem;
+}
+
+#home {
+    padding: 0;
+}
+
+/* About and Specs Sections */
+#about, #specs {
+    background-color: #fbdbf4;
+    font-size: 1.1rem; /* Slightly larger font for readability */
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #fbdbf4;
+    font-size: 1.1rem;
+}
+
+#gallery .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#gallery .car {
+    width: 30%;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+#gallery .car img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#gallery .car:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e2e2e2;
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin: 0.5rem 0;
+}
+
+#contact-form input, #contact-form textarea, #contact-form button {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #ff9800;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ff9800;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Block Elements */
+.block {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info Fixed Position */
+.contact-info {
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+/* Comment Section */
+textarea.comment-input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button.save-for-later, button.like, button.submit-comment {
+    margin-top: 10px;
+}
+
+#saved-items, #comments-section {
+    margin: 20px;
+}
+
+.comments {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
